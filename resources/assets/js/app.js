@@ -9,10 +9,10 @@ Vue.use(VueRouter);
 Vue.mixin(Util);
 
 const router = new VueRouter({
-	linkActiveClass: 'active',
-	routes
+    linkActiveClass: 'active',
+    routes
 });
 
 const app = new Vue({
-	router
+    router
 }).$mount('#app');

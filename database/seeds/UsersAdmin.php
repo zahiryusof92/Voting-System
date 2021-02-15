@@ -15,9 +15,9 @@ class UsersAdmin extends Seeder
         User::where('id',1)->delete();//To avoid duplicate user accounts
         $user = new User();
         $user->id = 1;
-        $user->name = env('USER_NAME','Lenard Mangay-ayam');
-        $user->email = env('USER_EMAIL','lenard.mangayayam@voting-system.com');
-        $user->password = bcrypt(env('USER_PASS','admin'));
+        $user->name = env('USER_NAME','Super Admin');
+        $user->email = env('USER_EMAIL','superadmin@example.com');
+        $user->password = bcrypt(env('USER_PASS','password'));
         $user->save();
     }
 }
